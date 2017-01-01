@@ -2,7 +2,6 @@ var UI = require('ui');
 var ajax = require('ajax');
 
 var themes=['дизайнеру','кодеру','верстальщику','фотографу','копирайтеру','маркетологу','сеошнику','водителю','музыканту','фокуснику','врачу','студенту','за жизнь','для него','для неё'];
-
 var cur_theme=localStorage.getItem('theme');
 if (!cur_theme){cur_theme=0;}
 
@@ -10,6 +9,7 @@ var main = new UI.Card({
   banner: 'images/app_icon.png',
   subtitle:'',
   body: '',
+  style:'large'
 });
 
 function update(){
